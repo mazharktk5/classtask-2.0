@@ -1,12 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMIT-CLONE</title>
-</head>
-<body>
-    <h1>Mazhar ahamd</h1>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                  #span {
+                    color: rgb(141, 198, 63);
+                  }
+                  .container-fluid {
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    z-index: 1030;
+                    padding-bottom: 12px;
+                    padding-top: 10px;
+                  }
+                  #btn1{
+                    background: rgb(141, 198, 63);
+
+                  }
+                  #btn3{
+                    background-color: rgb(13, 109, 183);
+                  }
+
+                  .heading {
+                    padding-top: 7px;
+                    padding-left: 4px;
+                    margin: 2px;
+                    margin-top: 144px;
+                    margin-left: 8px;
+                    font-size: 20px;
+
+                    font-weight: 100;
+
+                    width: fit-content;
+                  }
+                  .para {
+                    width: fit-content;
+                    margin-left: 5px;
+                    padding: 3px;
+                    margin-top: 25px;
+                  }
+                  #par {
+                    padding-top: 14px;
+                  }
+                  #span2 {
+                    color: rgb(20, 126, 179);
+                  }
+                  .left-content,
+                  .right-content {
+                    display: inline-block;
+                  }
+                  .right-content {
+                    margin-left: 125px;
+                  }
+
+                  #main-img {
+                    max-width: 576px;
+                    width: 500px;
+                    margin-bottom: 225px;
+                  }
+                  ul > li {
+                    padding-right: 15px;
+                  }
+                  #button-container {
+                    display: inline-block;
+                    margin-top: -15px;
+                    margin-bottom: 15px;
+                    width: fit-content;
+                  }
+                  .arrow:before {
+                    content: "\2192";
+                  }
+                  .arrow {
+                    height: 0px;
+                  }
+                  #explore-button {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 20px;
+                  }
+                  .top-sec {
+                    background-color: #d2d5d9;
+                    padding: 1px 0;
+                    height: 30px;
+                  }
+
+                  .top-sec ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    margin-left: 5px;
+                    padding: 0;
+                  }
+                  .body-nav ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    margin-left: 5px;
+                    padding: 0;
+                    background-color: rgb(141, 198, 63)
+                    height: 130px;
+                    margin-top: -146px;
+                    margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 10px;
+                padding: 10px
+
+                  }
+                  .body-nav{
+                    display: flex;
+                width: fit-content;
+                justify-content: space-between;
+                gap: 90px;
+                  }
+                  .my-body-nav{
+                    display: inline-block;
+                  }
+                  .form-control{
+                    display: inline-block;
+                    padding-right: 155px;
+                    padding-right: 57rem;
+                    padding: 0.375rem 2.75rem;
+                        padding-top: 14px;
+          padding-bottom: 13px;
+
+                  }
+                .input-group-text{
+                  display: inline-block;
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  color: white;
+          background-color: black;
+                }
+                .myinput-group-text{
+                  padding-top:6px;
+                  padding-bottom:6px;
+                }
+                .body-nav2{
+                  background-color: rgb(173 239 147 / 57%);
+
+                  padding-top: 55px;
+                padding-bottom: 28px;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 10px;
+                margin: 0px 15px 20px 15px;
+                flex: 1;
+                margin: 5px;
+                margin-top: -146px;
+            }
+            .btn2{
+              /* padding: 0px 2px 0px 2px; */
+              background-color: white;
+              color:black;
+              display: flex;
+              text-align: center;
+              align-items: center;
+              white-space: nowrap;
+
+              font-weight: bold;
+              font-family: popins;
+              transition: 0.5s;
+
+          padding: 13px 26px 13px 26px;
+
+            }
+            .btn2:hover {
+          transform: scale(1.1);
+        }
+            #btn{
+              background-color: rgb(141, 198, 63)
+
+            }
+            .img{
+              max-width: 100%;
+              border-radius: 4px;
+          height: 560px;
+          width: 100%;
+      }
+
+      .heading-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .section2 {
+                  display: flex;
+                  justify-content: center;
+                  gap: 10px;
+              }
+              .section-item {
+                background-color: lightgreen;
+          padding: 10px;
+          width: 280px;
+          height: 150px;
+          text-align: center;
+          padding-top: 70px;
+          border-radius: 5px;
+          font-weight: 600;}
+    </style>
+  </head>
+  <body>
+    <section class="top-sec">
+      <ul>
+        <li>
+          <img src="./images/mail.png" width="20px" alt="" />
+          info@SaylaniWelfare.com
+        </li>
+        <li>
+          <img
+            src="./images/icons8-phone-32.png"
+            width="20px"
+            alt=""
+          />021-111-729-526
+        </li>
+        <li>
+          <img
+            src="./images/icons8-whatsapp-24.png"
+            width="20px"
+            alt=""
+          />03111729526
+        </li>
+        <li>visit our websites:</li>
+        <li><img src="./images/flag1.png" width="20px" alt="" /></li>
+        <li><img src="./images/flag2.png" width="20px" alt="" /></li>
+        <li><img src="./images/flag4.png" width="20px" alt="" /></li>
+        <li><img src="./images/flages.png" width="20px" alt="" /></li>
+      </ul>
+    </section>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo-removebg-preview.png"
+            alt="Logo"
+            maxwidth="80%"
+            height="50px"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <!-- <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bank Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Other website</a>
+              </li>
+          </ul> -->
+
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Media</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bank details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Other websites</a>
+          </li>
+          <li>
+            <button type="button" id="btn3" class="btn btn-primary">
+              Qurbani 2024
+            </button>
+          </li>
+
+          <li>
+            <button type="button" id="btn3" class="btn btn-primary">
+              Donate Now
+            </button>
+          </li>
+          <li>
+            <button type="button" id="btn1" class="btn btn-success">
+              Be a Sponsor
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main body -->
+
+    <div class="left-content">
+      <div class="heading">
+        <h1>
+          Welcome to the <br />
+          <span id="span">Saylani</span> welfare
+        </h1>
+      </div>
+      <div class="para">
+        <h3 id="par">
+          The largest NGO offering
+          <span id="span2">free clean water,education</span> <br />
+        </h3>
+        <p>
+          Saylani Welfare is on the ground and already working with local
+          communities to assess how <br />
+          best to support underprivileged families in more than 63 areas of day
+          to day lives.
+        </p>
+        <br />
+        <div id="button-container">
+          <button
+            id="explore-button"
+            type="button"
+            class="btn btn-outline-secondary"
+          >
+            Explore <br />
+            <p class="arrow"></p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img id="main-img" src="./38.png" alt="" />
+    </div>
+    <!--second nav-->
+    <div class="body-nav2">
+      <div class="body-nav">
+        <div class="input-group mb-3 my-body-nav">
+          <span class="input-group-text"
+            >General
+            <input
+              type="text"
+              placeholder="0"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+            /><span class="input-group-text myinput-group-text">Rs</span></span
+          >
+          <span class="input-group-text"></span>
+        </div>
+
+        <div class="my-body-nav">
+          <button type="button" class="btn2 btn btn-outline-secondary">
+            Blood bank/Thalasemia treatment
+          </button>
+        </div>
+
+        <div class="my-body-nav">
+          <button type="button" class="btn2 btn btn-outline-secondary">
+            Family kifalat
+          </button>
+        </div>
+        <div class="my-body-nav">
+          <button type="button" class="btn2 btn btn-outline-secondary">
+            Medical
+          </button>
+        </div>
+        <div class="my-body-nav">
+          <button type="button" class="btn2 btn btn-outline-secondary">
+            Food
+          </button>
+        </div>
+        <div class="my-body-nav">
+          <button type="button" id="btn" class="btn2 btn btn-outline-secondary">
+            Quick Donate
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="img-div">
+      <img
+        class="img"
+        src="./images/1558de71-52cf-4449-a1fa-d8119fb9154a.jpg"
+        alt=""
+      />
+    </div>
+    <div class="heading-2">
+      <h1>What Are You Doing</h1>
+    </div>
+    <div class="section2">
+      <div class="section-item">Welfare</div>
+      <div class="section-item">Medical</div>
+      <div class="section-item">Online Sadqa</div>
+      <div class="section-item">Clean water</div>
+      <div class="section-item">Education</div>
+      <div class="section-item">Food</div>
+    </div>
+
+   
+  </body>
 </html>
